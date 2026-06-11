@@ -84,28 +84,24 @@ def render_table(rows):
     return header + "\n".join(rows) + "\n"
 
 
-MARKER = "<!-- AUTO-GENERATED: START -->"
-
-
 def main():
     items = fetch_all(f"author:{USERNAME}")
     cats = categorize(items)
 
     now = datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC")
 
-    # Preserve hand-written intro above the marker, if it exists.
-    header = ""
-    if os.path.exists("README.md"):
-        with open("README.md") as f:
-            existing = f.read()
-        if MARKER in existing:
-            header = existing.split(MARKER)[0]
+    repos = set()
+    for item in items:
+        repo_name = "/".join(item["repository_url"].split("/")[-2:])
+        repos.add(repo_name)
 
-    if not header:
-        header = f"# Open Source Contributions\n\n## Hi, I'm {USERNAME} 👋\n\n"
+    content = f"""# Contribution Log — {USERNAME}
 
-    generated = f"""{MARKER}
-_Last updated: {now} • auto-synced daily — do not edit below this line_
+_Last updated: {now} • auto-synced daily, do not edit manually_
+
+**Summary:** {len(cats['merged_prs'])} merged PRs • {len(cats['open_prs'])} open PRs • {len(items)} total contributions across {len(repos)} repositories.
+
+[← Back to README](README.md)
 
 ## ✅ Merged Pull Requests ({len(cats['merged_prs'])})
 
@@ -128,10 +124,31 @@ _Last updated: {now} • auto-synced daily — do not edit below this line_
 {render_table(cats['closed_issues'])}
 """
 
-    with open("README.md", "w") as f:
-        f.write(header + generated)
+    with open("CONTRIBUTIONS.md", "w") as f:
+        f.write(content)
 
-    print(f"Done. {len(items)} total items processed.")
+    # Update only the stats line in README.md, leave everything else untouched.
+    if os.path.exists("README.md"):
+        with open("README.md") as f:
+            readme = f.read()
+
+        stats_line = (
+            f"**📊 {len(cats['merged_prs'])} PRs merged** · "
+            f"**{len(items)} total contributions** · "
+            f"**{len(repos)} repositories** · "
+            f"[Full contribution log →](CONTRIBUTIONS.md)"
+        )
+
+        start_marker = "<!-- STATS: START -->"
+        end_marker = "<!-- STATS: END -->"
+        if start_marker in readme and end_marker in readme:
+            before = readme.split(start_marker)[0]
+            after = readme.split(end_marker)[1]
+            readme = before + start_marker + "\n" + stats_line + "\n" + end_marker + after
+            with open("README.md", "w") as f:
+                f.write(readme)
+
+    print(f"Done. {len(items)} total items processed across {len(repos)} repos.")
 
 
 if __name__ == "__main__":
