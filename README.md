@@ -20,7 +20,9 @@ the way.
 
 | Project | What I did | Type |
 |---------|-----------|------|
-| _Coming soon_ | _Add your first contribution here once merged_ | — |
+| [p5.js website](https://github.com/processing/p5.js-website/pull/1430) | Fixed navigation bar alignment issue using flexbox in a major creative-coding library used by millions | UI fix |
+| [GSoC Org Finder](https://github.com/S3DFX-CYBER/GSoC-Org-Finder-/pull/84) | Added a copy-link button to improve UX in the project ideas modal | Feature |
+| [Conference Website](https://github.com/suryanshvermaa/Conference_website/pull/14) | Cleaned up debug code from production frontend flows | Code quality |
 
 ---
 
@@ -32,9 +34,8 @@ the way.
 
 ## 🔗 Links
 
-- Portfolio: _add link_
-- LinkedIn: _add link_
-- Other projects: [pinned repos](https://github.com/kiranShamsHere) — IssueHunt AI, AgriClima, UniVibe
+- Portfolio: https://devkiran.vercel.app/
+- LinkedIn: https://www.linkedin.com/in/kiranshams/
 
 ---
 
