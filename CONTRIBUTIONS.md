@@ -1,15 +1,17 @@
 # Contribution Log — kiranShamsHere
 
-_Last updated: 2026-07-20 06:14 UTC • auto-synced daily, do not edit manually_
+_Last updated: 2026-07-21 05:46 UTC • auto-synced daily, do not edit manually_
 
-**Summary:** 13 merged PRs • 0 open PRs • 18 total contributions across 8 repositories.
+**Summary:** 15 merged PRs • 0 open PRs • 20 total contributions across 8 repositories.
 
 [← Back to README](README.md)
 
-## ✅ Merged Pull Requests (13)
+## ✅ Merged Pull Requests (15)
 
 | Date | Repo | PR/Issue | Title |
 |------|------|----------|-------|
+| 2026-07-21 | Nebulyn-Labs/MediFlow | [#105](https://github.com/Nebulyn-Labs/MediFlow/pull/105) | feat(dashboard): add pull-to-refresh to admin and facility overview |
+| 2026-07-20 | Nebulyn-Labs/MediFlow | [#95](https://github.com/Nebulyn-Labs/MediFlow/pull/95) | fix: update AI Chat empty state copy and prompts (#90) |
 | 2026-07-18 | Nebulyn-Labs/MediFlow | [#52](https://github.com/Nebulyn-Labs/MediFlow/pull/52) | fix(facility): add empty state for Active Indents page |
 | 2026-07-18 | Nebulyn-Labs/MediFlow | [#51](https://github.com/Nebulyn-Labs/MediFlow/pull/51) | feat(admin): add search and filtering to Admin Inventory Overview (#33) |
 | 2026-07-17 | Nebulyn-Labs/MediFlow | [#45](https://github.com/Nebulyn-Labs/MediFlow/pull/45) | feat: implement CSV export for inventory and daily usage logs |
