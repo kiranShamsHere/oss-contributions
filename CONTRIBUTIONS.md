@@ -1,8 +1,8 @@
 # Contribution Log — kiranShamsHere
 
-_Last updated: 2026-07-25 05:40 UTC • auto-synced daily, do not edit manually_
+_Last updated: 2026-07-26 05:58 UTC • auto-synced daily, do not edit manually_
 
-**Summary:** 17 merged PRs • 0 open PRs • 22 total contributions across 8 repositories.
+**Summary:** 17 merged PRs • 2 open PRs • 24 total contributions across 8 repositories.
 
 [← Back to README](README.md)
 
@@ -29,9 +29,12 @@ _Last updated: 2026-07-25 05:40 UTC • auto-synced daily, do not edit manually_
 | 2024-10-25 | kiranShamsHere/Badges | [#2](https://github.com/kiranShamsHere/Badges/pull/2) | Create main.js |
 
 
-## 🔄 Open Pull Requests (0)
+## 🔄 Open Pull Requests (2)
 
-_None yet._
+| Date | Repo | PR/Issue | Title |
+|------|------|----------|-------|
+| 2026-07-26 | Nebulyn-Labs/MediFlow | [#218](https://github.com/Nebulyn-Labs/MediFlow/pull/218) | docs: document optimization, routing, and simulation algorithms |
+| 2026-07-26 | Nebulyn-Labs/MediFlow | [#217](https://github.com/Nebulyn-Labs/MediFlow/pull/217) | docs: document the AI tool-calling architecture |
 
 
 ## ❌ Closed (Unmerged) Pull Requests (0)
