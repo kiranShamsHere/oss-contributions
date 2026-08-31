@@ -1,6 +1,6 @@
 # Contribution Log — kiranShamsHere
 
-_Last updated: 2026-08-30 08:53 UTC • auto-synced daily, do not edit manually_
+_Last updated: 2026-08-31 09:16 UTC • auto-synced daily, do not edit manually_
 
 **Summary:** 28 merged PRs • 2 open PRs • 35 total contributions across 8 repositories.
 
@@ -30,7 +30,7 @@ _Last updated: 2026-08-30 08:53 UTC • auto-synced daily, do not edit manually_
 | 2026-07-17 | Nebulyn-Labs/MediFlow | [#45](https://github.com/Nebulyn-Labs/MediFlow/pull/45) | feat: implement CSV export for inventory and daily usage logs |
 | 2026-07-17 | uditt490-pixel/YuvaHub | [#126](https://github.com/uditt490-pixel/YuvaHub/pull/126) | feat: enhance opportunity cards UI for improved readability and UX |
 | 2026-06-05 | processing/p5.js-website | [#1430](https://github.com/processing/p5.js-website/pull/1430) | fix: vertically align nav arrow with p5 logo using flexbox |
-| 2026-04-11 | S3DFX-CYBER/GSoC-Org-Finder- | [#84](https://github.com/S3DFX-CYBER/GSoC-Org-Finder-/pull/84) | feat: add copy link button next to Project Ideas URL in modal |
+| 2026-04-11 | S3DFX-CYBER/FindMyGSoC | [#84](https://github.com/S3DFX-CYBER/FindMyGSoC/pull/84) | feat: add copy link button next to Project Ideas URL in modal |
 | 2026-04-11 | suryanshvermaa/Conference_website | [#14](https://github.com/suryanshvermaa/Conference_website/pull/14) | fix: remove console.log statements from frontend UI flows |
 | 2026-04-08 | ubadasiyal88/Login---Registration---Form | [#3](https://github.com/ubadasiyal88/Login---Registration---Form/pull/3) | Refactor authentication UI for mobile responsiveness and interaction improvements |
 | 2026-04-02 | ubadasiyal88/Login---Registration---Form | [#1](https://github.com/ubadasiyal88/Login---Registration---Form/pull/1) | Added show/hide password feature |
